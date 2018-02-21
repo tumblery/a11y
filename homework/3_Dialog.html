@@ -56,8 +56,8 @@
     </span>
     <dialog id="dialog">
       <div class="hello-world">Hello, world!</div>
-      <input type="radio" name="option" tabindex="1">Hello!
-      <input type="radio" name="option"	tabindex="2">Bye!
+      <input type="radio" name="option_H" tabindex="1">Hello!
+      <input type="radio" name="option_B" tabindex="2">Bye!
       <div id="close" class="fancy-button" tabindex="3" onclick="closeDialog(this)">닫기</div>
     </dialog>
     <script>
@@ -80,6 +80,7 @@
       
       function closeDialog() {
         dialog.close();
+	settingButton.focus();
       }
     </script>
   </body>
