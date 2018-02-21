@@ -157,16 +157,16 @@
           // TODO: e.keyCode 및 위에 정의한 dates 2차원 배열을 이용해 방향키로 focus를 이동하는
           // 로직을 구현하세요. 이 주석 부분 외에 다른 부분은 고치실 필요가 없을 겁니다.
 		console.log("i:%d-----j:%d----keylog: %c\n",i,j,e.keycode);
-		if(e.keycode == '38' && i>0 ){
+		if(e.keycode == 38 && i>0 ){
 			i = i-1;
 			//dates[i-1][j].firstElementChild.fistfocus();
-		}else if(e.keycode == '40' && i<4 ){
+		}else if(e.keycode == 40 && i<4 ){
 			i = i+1;
 			//dates[i+1][j].firstElementChild.focus();
-		}else if(e.keycode == '37' && j>0 ){
+		}else if(e.keycode == 37 && j>0 ){
 			j = j-1;
 			//dates[i][j-1].firstElementChild.focus();
-		}else if(e.keycode == '39' && j<6 ){
+		}else if(e.keycode == 39 && j<6 ){
 			j = j+1;
 			//dates[i][j+1].firstElementChild.focus();
 		}
