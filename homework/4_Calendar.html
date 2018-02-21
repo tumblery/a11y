@@ -159,19 +159,14 @@
 		console.log("i:%d-----j:%d----keylog: %c\n",i,j,e.keyCode);
 		if(e.keyCode == 38 && i>0 ){
 			i = i-1;
-			console.log("38");
-			//dates[i-1][j].firstElementChild.fistfocus();
-		}else if(e.keycode == 40 && i<4 ){
+		}else if(e.keyCode == 40 && i<4 ){
 			i = i+1;
-			//dates[i+1][j].firstElementChild.focus();
-		}else if(e.keycode == 37 && j>0 ){
+		}else if(e.keyCode == 37 && j>0 ){
 			j = j-1;
-			//dates[i][j-1].firstElementChild.focus();
-		}else if(e.keycode == 39 && j<6 ){
+		}else if(e.keyCode == 39 && j<6 ){
 			j = j+1;
-			//dates[i][j+1].firstElementChild.focus();
 		}
-		dates[i][j].firstElementChild.focus();
+		dates[i][j].focus();
         };
       }
     </script>
